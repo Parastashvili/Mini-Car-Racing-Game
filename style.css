@@ -1,0 +1,88 @@
+body {
+  font-family: "Space Mono", monospace;
+}
+#carSelection {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 10%;
+}
+#inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  background-color: rgb(157, 192, 139, 0.8);
+  border-radius: 20px;
+  padding: 30px;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Carnum {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1;
+}
+#car1 {
+  position: relative;
+  border: none;
+  max-width: 200px;
+}
+#car2 {
+  position: relative;
+  border: none;
+  max-width: 200px;
+}
+#cityView {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(./cityBg.png);
+  background-repeat: repeat-x;
+}
+#road {
+  overflow: hidden;
+  margin-top: -20px;
+  padding: 40px 10px;
+  background-image: url(./360_F_290869161_c3F4iLkydIr9RrBeup35Qz07QXR53MtW.jpg);
+  background-repeat: repeat-x;
+  background-size: auto 187px;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#controls {
+  padding: 10px;
+  text-align: center;
+}
+input {
+  width: 50px;
+}
+#start {
+  background-color: rgb(96, 153, 102);
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 15px;
+  border-color: transparent;
+}
+#stop {
+  background-color: rgb(64, 81, 59);
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 15px;
+  border-color: transparent;
+  opacity: 0.4;
+}

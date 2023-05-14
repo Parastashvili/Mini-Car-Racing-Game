@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Racing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main id="container">
+      <div id="cityView">
+        <section id="inner">
+          <div id="carSelection">
+            <div id="firstCarSelection">
+              <h2 class="Carnum">First Car</h2>
+              <select id="firstSelect">
+                <option class="Lamborghini" value="2">Lamborghini</option>
+                <option class="Mclaren" value="1">Maclaren</option>
+                <option class="mustang" value="3">Mustang</option>
+              </select>
+            </div>
+            <div id="sectionCarSelection">
+              <h2 class="Carnum">Second Car</h2>
+              <select id="secondSelect">
+                <option class="mustang" value="3">Mustang</option>
+                <option class="Lamborghini" value="2">Lamborghini</option>
+                <option class="Mclaren" value="1">Maclaren</option>
+              </select>
+            </div>
+          </div>
+          <div id="controls">
+            <label>First Car Speed (km/h): </label>
+            <input type="number" id="speed1" value="240" />
+            <br /><br />
+            <label>Second Car Speed (km/h): </label>
+            <input type="number" id="speed2" value="280" />
+            <br /><br />
+            <button id="start" onclick="start()">START RACE</button>
+            <button id="stop" onclick="stop()">STOP</button>
+          </div>
+        </section>
+      </div>
+      <div id="road">
+        <img id="car1" src="./lamborgini.png" alt="" />
+        <div id="separator"></div>
+        <img id="car2" src="./mustang.png" alt="" />
+      </div>
+    </main>
+    <script src="./game.js"></script>
+  </body>
+</html>
