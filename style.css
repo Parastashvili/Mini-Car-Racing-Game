@@ -46,14 +46,14 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url(./cityBg.png);
+  background-image: url(./cityBG.png);
   background-repeat: repeat-x;
 }
 #road {
   overflow: hidden;
   margin-top: -20px;
   padding: 40px 10px;
-  background-image: url(./360_F_290869161_c3F4iLkydIr9RrBeup35Qz07QXR53MtW.jpg);
+  background-image: url(./road.jpg);
   background-repeat: repeat-x;
   background-size: auto 187px;
   background-position-y: center;
